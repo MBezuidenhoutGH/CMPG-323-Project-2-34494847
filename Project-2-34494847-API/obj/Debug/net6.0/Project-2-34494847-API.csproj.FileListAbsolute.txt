@@ -1,0 +1,54 @@
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\appsettings.json
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.exe
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.deps.json
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.runtimeconfig.json
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.dll
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.pdb
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.csproj.AssemblyReference.cache
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.AssemblyInfoInputs.cache
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.AssemblyInfo.cs
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.csproj.CoreCompileInputs.cache
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\scopedcss\bundle\Project-2-34494847-API.styles.css
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.csproj.CopyComplete
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.dll
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\refint\Project-2-34494847-API.dll
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.pdb
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.genruntimeconfig.cache
+C:\Users\marce\Desktop\VSCodeReps\udemyBulkyBookRazorPages\Project-2-34494847-API\Project-2-34494847-API\obj\Debug\net6.0\ref\Project-2-34494847-API.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\appsettings.json
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.exe
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.deps.json
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.runtimeconfig.json
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Project-2-34494847-API.pdb
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.csproj.AssemblyReference.cache
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.AssemblyInfoInputs.cache
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.AssemblyInfo.cs
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.csproj.CoreCompileInputs.cache
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\scopedcss\bundle\Project-2-34494847-API.styles.css
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.csproj.CopyComplete
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\refint\Project-2-34494847-API.dll
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.pdb
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\Project-2-34494847-API.genruntimeconfig.cache
+C:\Users\marce\Desktop\2022 Uni\Sem 2\CMPG323\CMPG-323-Project-2-34494847\Project-2-34494847-API\obj\Debug\net6.0\ref\Project-2-34494847-API.dll
