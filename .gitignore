@@ -9,8 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
-*.CMPG-323-Project-2-34494847/34494847-API/34494847-API/appsettings.json
-*.CMPG-323-Project-2-34494847/34494847-API/34494847-API/appsettings.Development.json
+CMPG-323-Project-2-34494847/34494847-API/34494847-API/appsettings.json
+CMPG-323-Project-2-34494847/34494847-API/34494847-API/appsettings.Development.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
