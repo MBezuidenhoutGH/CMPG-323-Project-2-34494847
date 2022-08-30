@@ -41,6 +41,58 @@ namespace _34494847_API.Controllers
             return category;
         }
 
+        //Has the student created a GET method that gets the devices based on a category ID being parsed in?
+        [HttpGet("GETDevicesCategoryID")]
+        public async Task<Object> GETDevicesWithCategory(Guid ID)
+        {
+            var results = await _context.Category.Join(
+                            _context.Device,
+                            firstentity => firstentity.CategoryId,
+                            secondentity => secondentity.CategoryId, //error
+                            (firstentity, secondentity) => new
+                            {
+                                FirstEntity = firstentity,
+                                SecondEntity = secondentity
+                            })
+                            .Where(x => x.FirstEntity.CategoryId == ID) //IMPORTANT
+                            .ToListAsync();
+
+
+            return results;
+        }
+
+        //Has the student created a GET method that will return the number of zones that are associated to a specific category?
+        [HttpGet("GETZonesCategoryID")]
+        public async Task<int> GETZonesWithCategory(Guid ID)
+        {
+            int count = await _context.Zone.Join(
+                            _context.Device,
+                            firstentity => firstentity.ZoneId,
+                            secondentity => secondentity.ZoneId, //error
+                            (firstentity, secondentity) => new
+                            {
+                            FirstEntity = firstentity,
+                            SecondEntity = secondentity
+                            })
+                            .Where(x => x.SecondEntity.CategoryId == ID) //IMPORTANT
+                            .CountAsync();
+
+
+            return count;
+        }
+
+
+        //TESTING
+        /*[HttpGet("GETDevicesCategoryID")]
+        public async Task<ActionResult<IEnumerable<Device>>> GetDevice(Guid ID)
+        {
+
+            var test = await _context.Device
+                .Where(x => x.CategoryId == ID).ToListAsync();
+
+            return test;
+        }*/
+
         // PUT: api/Categories/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -118,6 +170,6 @@ namespace _34494847_API.Controllers
         private bool CategoryExists(Guid id)
         {
             return _context.Category.Any(e => e.CategoryId == id);
-        }
+        }   
     }
 }
