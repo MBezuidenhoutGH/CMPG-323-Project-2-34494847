@@ -119,5 +119,17 @@ namespace _34494847_API.Controllers
         {
             return _context.Category.Any(e => e.CategoryId == id);
         }
+
+
+        //Has the student created a GET method that gets the devices based on a category ID being parsed in?
+        [HttpGet("GETDevicesCategoryID")]
+        public async Task<ActionResult<IEnumerable<Device>>> GetDevice(Guid ID)
+        {
+
+            var test = await _context.Device
+                .Where(x => x.CategoryId == ID).ToListAsync();
+
+            return test;
+        }
     }
 }

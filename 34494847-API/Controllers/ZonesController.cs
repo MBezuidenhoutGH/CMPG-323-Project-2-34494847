@@ -15,6 +15,11 @@ namespace _34494847_API.Controllers
     {
         private readonly ConnectedOfficeContext _context;
 
+        private bool ZoneExists(Guid id)
+        {
+            return _context.Zone.Any(e => e.ZoneId == id);
+        }
+
         public ZonesController(ConnectedOfficeContext context)
         {
             _context = context;
@@ -33,13 +38,14 @@ namespace _34494847_API.Controllers
         {
             var zone = await _context.Zone.FindAsync(id);
 
-            if (zone == null)
+            if(!ZoneExists(id))
             {
                 return NotFound();
             }
 
             return zone;
         }
+        
 
         // PUT: api/Zones/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
@@ -104,7 +110,7 @@ namespace _34494847_API.Controllers
         public async Task<ActionResult<Zone>> DeleteZone(Guid id)
         {
             var zone = await _context.Zone.FindAsync(id);
-            if (zone == null)
+            if (!ZoneExists(id))
             {
                 return NotFound();
             }
@@ -115,9 +121,5 @@ namespace _34494847_API.Controllers
             return zone;
         }
 
-        private bool ZoneExists(Guid id)
-        {
-            return _context.Zone.Any(e => e.ZoneId == id);
-        }
     }
 }

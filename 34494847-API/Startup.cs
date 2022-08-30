@@ -32,6 +32,7 @@ namespace _34494847_API
             options.UseSqlServer(Configuration.GetConnectionString("dbcon")));
 
             services.AddControllers();
+
             services.AddSwaggerGen(options => { options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "34494847-API", Version = "v2", Description = "API of student 34494847", }); });
         }
 
