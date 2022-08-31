@@ -45,7 +45,26 @@ namespace _34494847_API.Controllers
 
             return zone;
         }
-        
+
+        //Has the student created a a GET method that retrieves all devices within a specific zone (based on the zone ID that is parsed through)?
+        [HttpGet("GETDevicesWithZoneID")]
+        public async Task<Object> GETDevicesWithZoneID(Guid ID)
+        {
+            var results = await _context.Zone.Join(
+                            _context.Device,
+                            firstentity => firstentity.ZoneId,
+                            secondentity => secondentity.ZoneId, //error
+                            (firstentity, secondentity) => new
+                            {
+                                FirstEntity = firstentity,
+                                SecondEntity = secondentity
+                            })
+                            .Where(x => x.FirstEntity.ZoneId == ID) //IMPORTANT
+                            .ToListAsync();
+
+
+            return results;
+        }
 
         // PUT: api/Zones/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
