@@ -15,24 +15,23 @@ namespace _34494847_API.Controllers
     {
         private readonly ConnectedOfficeContext _context;
 
-        private bool ZoneExists(Guid id)
-        {
-            return _context.Zone.Any(e => e.ZoneId == id);
-        }
-
         public ZonesController(ConnectedOfficeContext context)
         {
             _context = context;
         }
 
-        // GET: api/Zones
+        //Create a GET method that retrieves
+        //all Zone entries from the database
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Zone>>> GetZone()
         {
             return await _context.Zone.ToListAsync();
         }
 
-        // GET: api/Zones/5
+        //Create a GET method that will
+        //retrieve one Zone from the
+        //database based on the ID parsed
+        //through
         [HttpGet("{id}")]
         public async Task<ActionResult<Zone>> GetZone(Guid id)
         {
@@ -46,29 +45,35 @@ namespace _34494847_API.Controllers
             return zone;
         }
 
-        //Has the student created a a GET method that retrieves all devices within a specific zone (based on the zone ID that is parsed through)?
-        [HttpGet("GETDevicesWithZoneID")]
-        public async Task<Object> GETDevicesWithZoneID(Guid ID)
+        //Create a POST method that will
+        //create a new Zone entry on the
+        //database
+        [HttpPost]
+        public async Task<ActionResult<Zone>> PostZone(Zone zone)
         {
-            var results = await _context.Zone.Join(
-                            _context.Device,
-                            firstentity => firstentity.ZoneId,
-                            secondentity => secondentity.ZoneId, //error
-                            (firstentity, secondentity) => new
-                            {
-                                FirstEntity = firstentity,
-                                SecondEntity = secondentity
-                            })
-                            .Where(x => x.FirstEntity.ZoneId == ID) //IMPORTANT
-                            .ToListAsync();
+            _context.Zone.Add(zone);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (ZoneExists(zone.ZoneId))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-
-            return results;
+            return CreatedAtAction("GetZone", new { id = zone.ZoneId }, zone);
         }
 
-        // PUT: api/Zones/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        //Create a PATCH method that will
+        //update an existing Zone entry on
+        //the database
         [HttpPut("{id}")]
         public async Task<IActionResult> PutZone(Guid id, Zone zone)
         {
@@ -98,33 +103,9 @@ namespace _34494847_API.Controllers
             return NoContent();
         }
 
-        // POST: api/Zones
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<Zone>> PostZone(Zone zone)
-        {
-            _context.Zone.Add(zone);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (ZoneExists(zone.ZoneId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return CreatedAtAction("GetZone", new { id = zone.ZoneId }, zone);
-        }
-
-        // DELETE: api/Zones/5
+        //Create a DELETE method that will
+        //delete an existing Zone entry on
+        //the database
         [HttpDelete("{id}")]
         public async Task<ActionResult<Zone>> DeleteZone(Guid id)
         {
@@ -140,5 +121,36 @@ namespace _34494847_API.Controllers
             return zone;
         }
 
+        //Add a private method in the API
+        //that checks if a Zone exists(based
+        //on the ID parsed through) before
+        //editing or deleting an item
+        private bool ZoneExists(Guid id)
+        {
+            return _context.Zone.Any(e => e.ZoneId == id);
+        }
+
+        //Create a GET method that retrieves
+        //all devices within a specific zone
+        //(based on the zone ID that is
+        //parsed through)
+        [HttpGet("GETDevicesWithZoneID")]
+        public async Task<Object> GETDevicesWithZoneID(Guid ID)
+        {
+            var results = await _context.Zone.Join(
+                            _context.Device,
+                            firstentity => firstentity.ZoneId,
+                            secondentity => secondentity.ZoneId, //error
+                            (firstentity, secondentity) => new
+                            {
+                                FirstEntity = firstentity,
+                                SecondEntity = secondentity
+                            })
+                            .Where(x => x.FirstEntity.ZoneId == ID) //IMPORTANT
+                            .ToListAsync();
+
+
+            return results;
+        }
     }
 }
