@@ -20,14 +20,19 @@ namespace _34494847_API.Controllers
             _context = context;
         }
 
-        // GET: api/Categories
+        //Create a GET method that retrieves
+        //all Category entries from the
+        //database
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategory()
         {
             return await _context.Category.ToListAsync();
         }
 
-        // GET: api/Categories/5
+        //Create a GET method that will
+        //retrieve one Category from the
+        //database based on the ID parsed
+        //through
         [HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(Guid id)
         {
@@ -41,61 +46,35 @@ namespace _34494847_API.Controllers
             return category;
         }
 
-        //Has the student created a GET method that gets the devices based on a category ID being parsed in?
-        [HttpGet("GETDevicesCategoryID")]
-        public async Task<Object> GETDevicesWithCategory(Guid ID)
+        //Create a POST method that will
+        //create a new Category entry on the
+        //database
+        [HttpPost]
+        public async Task<ActionResult<Category>> PostCategory(Category category)
         {
-            var results = await _context.Category.Join(
-                            _context.Device,
-                            firstentity => firstentity.CategoryId,
-                            secondentity => secondentity.CategoryId, //error
-                            (firstentity, secondentity) => new
-                            {
-                                FirstEntity = firstentity,
-                                SecondEntity = secondentity
-                            })
-                            .Where(x => x.FirstEntity.CategoryId == ID) //IMPORTANT
-                            .ToListAsync();
+            _context.Category.Add(category);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (CategoryExists(category.CategoryId))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-
-            return results;
+            return CreatedAtAction("GetCategory", new { id = category.CategoryId }, category);
         }
 
-        //Has the student created a GET method that will return the number of zones that are associated to a specific category?
-        [HttpGet("GETZonesCategoryID")]
-        public async Task<int> GETZonesWithCategory(Guid ID)
-        {
-            int count = await _context.Zone.Join(
-                            _context.Device,
-                            firstentity => firstentity.ZoneId,
-                            secondentity => secondentity.ZoneId, //error
-                            (firstentity, secondentity) => new
-                            {
-                            FirstEntity = firstentity,
-                            SecondEntity = secondentity
-                            })
-                            .Where(x => x.SecondEntity.CategoryId == ID) //IMPORTANT
-                            .CountAsync();
-
-
-            return count;
-        }
-
-
-        //TESTING
-        /*[HttpGet("GETDevicesCategoryID")]
-        public async Task<ActionResult<IEnumerable<Device>>> GetDevice(Guid ID)
-        {
-
-            var test = await _context.Device
-                .Where(x => x.CategoryId == ID).ToListAsync();
-
-            return test;
-        }*/
-
-        // PUT: api/Categories/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        //Create a PATCH method that will
+        //update an existing Category entry
+        //on the database
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategory(Guid id, Category category)
         {
@@ -125,33 +104,9 @@ namespace _34494847_API.Controllers
             return NoContent();
         }
 
-        // POST: api/Categories
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<Category>> PostCategory(Category category)
-        {
-            _context.Category.Add(category);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (CategoryExists(category.CategoryId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return CreatedAtAction("GetCategory", new { id = category.CategoryId }, category);
-        }
-
-        // DELETE: api/Categories/5
+        //Create a DELETE method that will
+        //delete an existing Category entry
+        //on the database
         [HttpDelete("{id}")]
         public async Task<ActionResult<Category>> DeleteCategory(Guid id)
         {
@@ -167,9 +122,60 @@ namespace _34494847_API.Controllers
             return category;
         }
 
+        //Add a private method in the API
+        //that checks if a Category exists
+        //(based on the ID parsed through)
+        //before editing or deleting an item
         private bool CategoryExists(Guid id)
         {
             return _context.Category.Any(e => e.CategoryId == id);
-        }   
+        }
+
+        //Create a GET method that retrieves
+        //all devices within a specific
+        //category(based on the category ID
+        //that is parsed through)
+        [HttpGet("GETDevicesWithCategoryID")]
+        public async Task<Object> GETDevicesWithCategory(Guid ID)
+        {
+            var results = await _context.Category.Join(
+                            _context.Device, //GET THE DEVICES
+                            firstentity => firstentity.CategoryId,
+                            secondentity => secondentity.CategoryId,
+                            (firstentity, secondentity) => new
+                            {
+                                FirstEntity = firstentity,
+                                SecondEntity = secondentity
+                            })
+                            .Where(x => x.FirstEntity.CategoryId == ID) //BASED ON THE CATEGORY ID BEING PARSED
+                            .ToListAsync();
+
+
+            return results;
+        }
+
+        //Create a GET method that will
+        //return the number of zones that are
+        //associated to a specific category
+        //(use the device entity to join the
+        //data)
+        [HttpGet("GETNumberOfZonesWithCategoryID")]
+        public async Task<int> GETZonesWithCategory(Guid ID)
+        {
+            int count = await _context.Zone.Join(
+                            _context.Device,
+                            firstentity => firstentity.ZoneId,
+                            secondentity => secondentity.ZoneId, 
+                            (firstentity, secondentity) => new
+                            {
+                                FirstEntity = firstentity,
+                                SecondEntity = secondentity
+                            })
+                            .Where(x => x.SecondEntity.CategoryId == ID) //BASED ON THE CATEGORY ID BEING PARSED
+                            .CountAsync();
+
+
+            return count;
+        }
     }
 }

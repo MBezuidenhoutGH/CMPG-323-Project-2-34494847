@@ -20,14 +20,19 @@ namespace _34494847_API.Controllers
             _context = context;
         }
 
-        // GET: api/Devices
+        //Create a GET method that retrieves
+        //all Device entries from the
+        //database
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Device>>> GetDevice()
         {
             return await _context.Device.ToListAsync();
         }
 
-        // GET: api/Devices/5
+        //Create a GET method that will
+        //retrieve one Device from the
+        //database based on the ID parsed
+        //through
         [HttpGet("{id}")]
         public async Task<ActionResult<Device>> GetDevice(Guid id)
         {
@@ -41,9 +46,35 @@ namespace _34494847_API.Controllers
             return device;
         }
 
-        // PUT: api/Devices/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        //Create a POST method that will
+        //create a new Device entry on the
+        //database
+        [HttpPost]
+        public async Task<ActionResult<Device>> PostDevice(Device device)
+        {
+            _context.Device.Add(device);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (DeviceExists(device.DeviceId))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return CreatedAtAction("GetDevice", new { id = device.DeviceId }, device);
+        }
+
+        //Create a PATCH method that will
+        //update an existing Device entry on
+        //the database
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDevice(Guid id, Device device)
         {
@@ -72,34 +103,10 @@ namespace _34494847_API.Controllers
 
             return NoContent();
         }
-
-        // POST: api/Devices
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<Device>> PostDevice(Device device)
-        {
-            _context.Device.Add(device);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (DeviceExists(device.DeviceId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return CreatedAtAction("GetDevice", new { id = device.DeviceId }, device);
-        }
-
-        // DELETE: api/Devices/5
+   
+        //Create a DELETE method that will
+        //delete an existing Device entry on
+        //the database
         [HttpDelete("{id}")]
         public async Task<ActionResult<Device>> DeleteDevice(Guid id)
         {
@@ -115,6 +122,10 @@ namespace _34494847_API.Controllers
             return device;
         }
 
+        //Add a private method in the API
+        //that checks if a Device exists
+        //(based on the ID parsed through)
+        //before editing or deleting an item
         private bool DeviceExists(Guid id)
         {
             return _context.Device.Any(e => e.DeviceId == id);
