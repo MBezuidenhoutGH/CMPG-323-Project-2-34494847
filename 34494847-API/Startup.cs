@@ -114,7 +114,7 @@ namespace _34494847_API
             });
 
             app.UseSwagger();
-            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "MyTest Demo"));
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "ConnectedOffice-API-34494847"));
         }
     }
 }
