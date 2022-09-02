@@ -36,7 +36,7 @@ namespace _34494847_API
             {
                 c.SwaggerDoc("v2", new OpenApiInfo
                 {
-                    Title = "Testing Security",
+                    Title = "ConnectedOffice-API-34494847",
                     Version = "v2"
                 });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
