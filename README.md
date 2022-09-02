@@ -21,5 +21,5 @@
 	<br /><img src="img/auth3.png" alt="API-34494847 slots image"/><br />
 	Now the user will also notice how the locks changes on the right as follows: <br />
 	<br /><img src="img/lock2.png" alt="API-34494847 slots image"/><br />
-	And that's it, The user can now access all of the endpoints in the API of student 34494847
+	And that's it, the user can now access all of the endpoints in the API of student 34494847
 </p>
