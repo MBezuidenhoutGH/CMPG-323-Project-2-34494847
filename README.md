@@ -2,7 +2,7 @@
 
 <p>
 	In order to use the API of student 34494847 the user needs to click this link: <a href="https://api-34494847.azurewebsites.net/swagger/index.html">API-34494847</a>.
-	Then once the web page has landed, the user will be greeted with the following banner: <br />
+	Once the web page has landed, the user will be greeted with the following banner: <br />
 	<br /><img src="img/landingbanner.png" alt="API-34494847 landing banner image"/><br />
 	The user needs to login with a username and password to be able to use any of the endpoints. The login credentials are not provided in this README file but are provided in the submission form.
 	To login to use the endpoints, the user needs to click on the drop down of the /api.Authenticate/login endpoint: <br />
