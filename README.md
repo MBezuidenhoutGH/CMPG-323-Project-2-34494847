@@ -29,8 +29,7 @@
 	The Categories controller has two additional methods as requested, a method where the user GETs all devices based on a category ID being parsed in and a method where the user GETs the number of 
 	zones that are associated to a specific category based on the category ID being parsed in. For the Zones controller, one additional method has also been added as requested, the method
 	GETs all devices within a specific zone based on the zone ID being parsed in. Then finally, the last requirement, each controller contains a method that checks if an
-	item exists before trying to edit or delete the item
-
+	item exists before trying to edit or delete the item <br />
 	Categories Controller: <br />
 	<br /><img src="img/categoriesendpoints.png" alt="API-34494847 categories image"/><br />
 	Devices Controller: <br />
