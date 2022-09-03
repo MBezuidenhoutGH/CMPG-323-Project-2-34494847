@@ -36,6 +36,9 @@
 	<br /><img src="img/devicesendpoints.png" alt="API-34494847 devices image"/><br />
 	Zones Controller: <br />
 	<br /><img src="img/zonesendpoints.png" alt="API-34494847 zones image"/><br />
+	Also note, for the additional methods I joined the entitites using lambdas because it is easier to manage for longevity incase I would like to change something. In doing so,
+	I can also see both joined entites in my response body to see how they are linked, like this: <br />
+	<br /><img src="img/join.png" alt="API-34494847 join image"/>
 </p>
 
 <h2>Security in the API</h2>
@@ -43,7 +46,7 @@
 	For the implemented security the student has made use of JWT (JSON Web Token) authentication. Which basically means that the user needs a token (admin token in the student's API) to access any of the endpoints in the API
 	as discussed previously "How to use the API". The student also has made extensive use of the .gitignore file to hide any type of file that contains credentials and sensitive information.
 	This includes files such as appsettings.json, azure publish profiles etc: <br />
-	<br /><img src="img/.gitignore.png" alt="API-34494847 .gitignore image"/><br />
+	<br /><img src="img/.gitignore.png" alt="API-34494847 .gitignore image"/>
 </p>
 
 <h2>Hosting for the API and Database</h2>
@@ -58,11 +61,11 @@
 		<li>SQL server</li>
 		<li>SQL database</li>
     </ul>
-	<img src="img/hosting.png" alt="API-34494847 hosting image"/><br />
+	<img src="img/hosting.png" alt="API-34494847 hosting image"/>
 </p>
 
 <h2>API Management</h2>
 <p>
 	The student has setup API Management in Azure: <br />
-	<br /><img src="img/apimanagement.png" alt="API-34494847 api management image"/><br />
+	<br /><img src="img/apimanagement.png" alt="API-34494847 api management image"/>
 </p>
