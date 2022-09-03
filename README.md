@@ -26,10 +26,10 @@
 <h2>Endpoints in the API</h2>
 <p>
 	Each controller in the API contains every CRUD operaton (Create, Read, Update, and Delete). Additionally, all other specifications of methods in the project has also been completed.
-	The Categories controller has two additional methods as requested, a method where the user GETs all devices based on a category ID being parsed in and a method where the use GETs the number of 
+	The Categories controller has two additional methods as requested, a method where the user GETs all devices based on a category ID being parsed in and a method where the user GETs the number of 
 	zones that are associated to a specific category based on the category ID being parsed in. For the Zones controller, one additional method has also been added as requested, the method
 	GETs all devices within a specific zone based on the zone ID being parsed in. Then finally, the last requirement, each controller contains a method that checks if an
-	item exists before trying to edit or delete the item<br />
+	item exists before trying to edit or delete the item
 
 	Categories Controller: <br />
 	<br /><img src="img/categoriesendpoints.png" alt="API-34494847 categories image"/><br />
@@ -37,5 +37,4 @@
 	<br /><img src="img/devicesendpoints.png" alt="API-34494847 devices image"/><br />
 	Zones Controller: <br />
 	<br /><img src="img/zonesendpoints.png" alt="API-34494847 zones image"/><br />
-
 </p>
