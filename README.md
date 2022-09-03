@@ -45,3 +45,18 @@
 	This includes files such as appsettings.json, azure publish profiles etc: <br /
 	<br /><img src="img/.gitignore.png" alt="API-34494847 .gitignore image"/><br />
 </p>
+
+<h2>Hosting for the API and Database</h2>
+<p>
+	The API and database is hosted on the student's Microsoft Azure account. So, the student's API can be accessed over the internet anywhere in the world by clicking: 
+	<a href="https://api-34494847.azurewebsites.net/swagger/index.html">API-34494847</a><br />
+	Student 34494847 resource group includes the following: <br />
+	<ul>
+        <li>API Management service</li>
+		<li>App Service plan</li>
+		<li>App Service</li>
+		<li>SQL server</li>
+		<li>SQL database</li>
+    </ul><br />
+	<br /><img src="img/hosting.png" alt="API-34494847 hosting image"/><br />
+</p>
