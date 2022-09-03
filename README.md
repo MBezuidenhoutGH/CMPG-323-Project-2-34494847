@@ -57,6 +57,6 @@
 		<li>App Service</li>
 		<li>SQL server</li>
 		<li>SQL database</li>
-    </ul><br />
+    </ul>
 	<br /><img src="img/hosting.png" alt="API-34494847 hosting image"/><br />
 </p>
