@@ -29,11 +29,19 @@
 	The Categories controller has two additional methods as requested, a method where the user GETs all devices based on a category ID being parsed in and a method where the user GETs the number of 
 	zones that are associated to a specific category based on the category ID being parsed in. For the Zones controller, one additional method has also been added as requested, the method
 	GETs all devices within a specific zone based on the zone ID being parsed in. Then finally, the last requirement, each controller contains a method that checks if an
-	item exists before trying to edit or delete the item <br /><br />
+	item exists before trying to edit or delete the item. <br /><br />
 	Categories Controller: <br />
 	<br /><img src="img/categoriesendpoints.png" alt="API-34494847 categories image"/><br />
 	Devices Controller: <br />
 	<br /><img src="img/devicesendpoints.png" alt="API-34494847 devices image"/><br />
 	Zones Controller: <br />
 	<br /><img src="img/zonesendpoints.png" alt="API-34494847 zones image"/><br />
+</p>
+
+<h2>Security in the API</h2>
+<p>
+	For the implemented security the student has made use of JWT (JSON Web Token) authentication. Which basically means that the user needs a token (admin token in the student's API) to access any of the endpoints in the API
+	as discussed previously "How to use the API". The student also has made extensive use of the .gitignore file to hide any type of file that contains credentials and sensitive information.
+	This includes files such as appsettings.json, azure publish profiles etc: <br /
+	<br /><img src="img/.gitignore.png" alt="API-34494847 .gitignore image"/><br />
 </p>
