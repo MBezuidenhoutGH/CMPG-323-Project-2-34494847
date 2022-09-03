@@ -42,7 +42,7 @@
 <p>
 	For the implemented security the student has made use of JWT (JSON Web Token) authentication. Which basically means that the user needs a token (admin token in the student's API) to access any of the endpoints in the API
 	as discussed previously "How to use the API". The student also has made extensive use of the .gitignore file to hide any type of file that contains credentials and sensitive information.
-	This includes files such as appsettings.json, azure publish profiles etc: <br /
+	This includes files such as appsettings.json, azure publish profiles etc: <br />
 	<br /><img src="img/.gitignore.png" alt="API-34494847 .gitignore image"/><br />
 </p>
 
@@ -58,5 +58,11 @@
 		<li>SQL server</li>
 		<li>SQL database</li>
     </ul>
-	<br /><img src="img/hosting.png" alt="API-34494847 hosting image"/><br />
+	<img src="img/hosting.png" alt="API-34494847 hosting image"/><br />
+</p>
+
+<h2>API Management</h2>
+<p>
+	The student has setup API Management in Azure: <br />
+	<br /><img src="img/apimanagement.png" alt="API-34494847 api management image"/><br />
 </p>
