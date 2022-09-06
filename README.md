@@ -28,7 +28,7 @@ Note: No snippets of imporant code will be provided because I am concered about 
 	The Device, Zone and Category tabels in the provided database from Ms Muller have been scaffolded to generate accurate models of the database structure.
 	Then dependancy injection was resolved by adding DBContext to the Startup.cs file. Lastly, the database is hosted on Microsoft Azure which the API is connected to using
 	the connection string provided by Microsoft Azure.
-</p
+</p>
 <h2>Business Logic Layer</h2>
 <p>
 	Each controller in the API contains every CRUD operaton (Create, Read, Update, and Delete). Additionally, all other specifications of methods in the project has also been completed.
