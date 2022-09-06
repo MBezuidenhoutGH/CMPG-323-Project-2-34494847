@@ -23,7 +23,7 @@ Note: No snippets of imporant code will be provided because I am concered about 
 	Now the user will also notice how the locks changes on the right as follows: <br />
 	<br /><img src="img/lock2.png" alt="API-34494847 slots image"/><br />
 	And that's it, the user can now access all of the endpoints in the API of student 34494847<br />
-	<h3>PI Management service</h3>
+	<h3>API Management service</h3>
 	In order to use the API of student 34494847 in API Management service, the student will grant access for the users to the resource group as discussed at Hosting further down in the README<br />
 	<br />Once the user is at the API Management service, click the "APIs" option on the left panel:<br />
 	<br /><img src="img/apipane.png" alt="API-34494847 api pane image"/><br />
