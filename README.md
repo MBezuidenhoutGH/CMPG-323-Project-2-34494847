@@ -42,7 +42,7 @@ Note: No snippets of imporant code will be provided because I am concered about 
 	<br /><img src="img/autdrop.png" alt="API-34494847 header api image"/><br />
 	Now use the token you have copied to your clipboard earlier. In the value field type "Bearer" followed with a space and then paste the provided token then click the "Send" button: <br />
 	<br /><img src="img/headerval.png" alt="API-34494847 header api image"/><br />
-	And that's it, the user can now view the HTTP response for the selected endpoint in the API of student 34494847<br />
+	And that's it, the user can now view the HTTP response for the selected endpoint in the API of student 34494847: <br />
 	<br /><img src="img/final.png" alt="API-34494847 header api image"/>
 </p>
 <h2>Data Access Layer</h2>
