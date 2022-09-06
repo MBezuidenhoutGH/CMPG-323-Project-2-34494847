@@ -1,6 +1,7 @@
 Note: No snippets of imporant code will be provided because I am concered about plagiarism<br />
 <h2>How to use the API</h2>
 <p>
+	Note: To use the API in API Management service, please refer to after this section<br /><br />
 	In order to use the API of student 34494847 the user needs to click this link: <a href="https://api-34494847.azurewebsites.net/swagger/index.html">API-34494847</a>.
 	Once the web page has landed, the user will be greeted with the following banner: <br />
 	<br /><img src="img/landingbanner.png" alt="API-34494847 landing banner image"/><br />
@@ -21,7 +22,27 @@ Note: No snippets of imporant code will be provided because I am concered about 
 	<br /><img src="img/auth3.png" alt="API-34494847 slots image"/><br />
 	Now the user will also notice how the locks changes on the right as follows: <br />
 	<br /><img src="img/lock2.png" alt="API-34494847 slots image"/><br />
-	And that's it, the user can now access all of the endpoints in the API of student 34494847
+	And that's it, the user can now access all of the endpoints in the API of student 34494847<br />
+	<br />In order to use the API of student 34494847 in API Management service, the student will grant access for the users to the resource group as discussed at Hosting further down in the README<br />
+	Once the user is at the API Management service, click the "APIs" option on the left panel:<br />
+	<br /><img src="img/apipane.png" alt="API-34494847 api pane image"/><br />
+	Now select the "ConnectedOffice-API-34494847" API under the "All APIs" panel and then click "Test" on the right panel:<br />
+	<br /><img src="img/selectapi.png" alt="API-34494847 select api image"/><br />
+	The user needs to login with a username and password to be able to use any of the endpoints. The login credentials are not provided in this README file but are provided in the submission form.
+	To login to use the endpoints, the user needs to click on /api/Authenticate/login - POST endpoint: <br />
+	<br /><img src="img/loginapi.png" alt="API-34494847 login api image"/><br />
+	Then the user needs enter a valid username and password in the Request body then click the "Send" button: <br />
+	<br /><img src="img/requestbod.png" alt="API-34494847 request api image"/><br />
+	If the information is correct, the user will receive a token that is valid for 1 hour to use to access the endpoints in the HTTP response, then copy this token to your clipboard: <br />
+	<br /><img src="img/httpresponse.png" alt="API-34494847 response api image"/><br />
+	Now that you have a valid token for 1 hour, you need to individually unlock the endpoints you want to use. Select any other endpoint and click the "Add header" button: <br />
+	<br /><img src="img/header.png" alt="API-34494847 header api image"/><br />
+	Click on the drop down for the "NAME" field and select "Authorization"<br />
+	<br /><img src="img/autdrop.png" alt="API-34494847 header api image"/><br />
+	Now use the token you have copied to your clipboard earlier. In the value field type "Bearer" followed with a space and then paste the provided token then click the "Send" button: <br />
+	<br /><img src="img/headerval.png" alt="API-34494847 header api image"/><br />
+	And that's it, the user can now view the HTTP response for the selected endpoint in the API of student 34494847<br />
+	<br /><img src="img/final.png" alt="API-34494847 header api image"/>
 </p>
 <h2>Data Access Layer</h2>
 <p>
