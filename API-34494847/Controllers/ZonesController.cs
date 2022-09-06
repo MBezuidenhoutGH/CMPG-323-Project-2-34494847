@@ -13,6 +13,7 @@ namespace _34494847_API.Controllers
 {
     //Ensure that authentication has
     //been set up to restrict access to the API
+    //zone endpoints
     [Authorize(Roles = UserRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
