@@ -36,7 +36,7 @@ Note: No snippets of imporant code will be provided because I am concered about 
 	zones that are associated to a specific category based on the category ID being parsed in. For the Zones controller, one additional method has also been added as requested, the method
 	GETs all devices within a specific zone based on the zone ID being parsed in. Then finally, the last requirement, each controller contains a method that checks if an
 	item exists before trying to edit or delete the item. <br />
-	CategoriesController: <br />
+	<br />CategoriesController: <br />
 	<br /><img src="img/categoriesendpoints.png" alt="API-34494847 categories image"/><br />
 	DevicesController: <br />
 	<br /><img src="img/devicesendpoints.png" alt="API-34494847 devices image"/><br />
@@ -53,7 +53,7 @@ Note: No snippets of imporant code will be provided because I am concered about 
 	This includes files such as appsettings.json, azure publish profiles etc: <br />
 	<br /><img src="img/.gitignore.png" alt="API-34494847 .gitignore image"/><br />
 	Deployment of authorization in each controller (admin users only): <br />
-	CategoriesController: <br />
+	<br />CategoriesController: <br />
 	<br /><img src="img/authcategory.png" alt="API-34494847 auth categories image"/><br />
 	DevicesController: <br />
 	<br /><img src="img/authdevice.png" alt="API-34494847 auth device image"/><br />
@@ -63,8 +63,8 @@ Note: No snippets of imporant code will be provided because I am concered about 
 <h2>Hosting</h2>
 <p>
 	The API and database is hosted on the student's Microsoft Azure account. So, the student's API can be accessed over the internet anywhere in the world by clicking: 
-	<a href="https://api-34494847.azurewebsites.net/swagger/index.html">API-34494847</a>. The student also granted access to the provided emails to access the student's resource group.<br />
-	<br />Student 34494847' resource group includes the following: <br />
+	<a href="https://api-34494847.azurewebsites.net/swagger/index.html">API-34494847</a>. The student also granted access to the provided emails in the submission form to access the student's resource group.<br />
+	<br />Student 34494847's resource group includes the following: <br />
 	<ul>
         <li>API Management service</li>
 		<li>App Service plan</li>
@@ -81,7 +81,7 @@ Note: No snippets of imporant code will be provided because I am concered about 
 </p>
 <h2>Scrum Implementation</h2>
 <p>
-	The student has succesfully kept his GitHub board updated through ut Project 2 as the board was setup in Project 1.
+	The student has succesfully kept his GitHub board updated throughout Project 2 as the board was setup in Project 1.
 	Also, the student's Project 2 repository is linked to his GitHub board and a lot of effort was done to link the exact repositories of each Project that was done and what must be done
 	to each task (Repository and Linked Assessment fields).<br />
 	<br /><img src="img/githubboard.png" alt="API-34494847 github board image"/>
@@ -92,7 +92,7 @@ Note: No snippets of imporant code will be provided because I am concered about 
 	The branching strategy that was setup in Project 1 was followed to the T which demonstrated an iterative use of GitHub throughout Project 2
 	to succesfully manage version control of the project. The student also did a lot of effort in providing a very well laid out README.md file by explaining everything possible
 	to make it easier for the person trying to figure everyting out. Aboslutely no credentials are available in the student's repository anywhere.<br />
-	Some of the student's first commits was done over 28 days ago and by now probably over a month ago: <br />
+	<br />Some of the student's first commits was done over 28 days ago and by now probably over a month ago: <br />
 	<br /><img src="img/firstcommits.png" alt="API-34494847 first commit image"/>
 </p>
 <h2>Reference List</h2>
