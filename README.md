@@ -1,4 +1,11 @@
-Note: No snippets of imporant code will be provided because I am concered about plagiarism<br />
+Note: Due to the announcement made on 12-Sep-2022 13:01 the API Management section is discussed first<br />
+<h2>API Management</h2>
+<p>
+	The student has setup API Management in Azure: <br />
+	<br /><img src="img/apimanagement.png" alt="API-34494847 api management image"/><br />
+	<br /><img src="img/endpoints1.png" alt="API-34494847 endpoints image"/><br />
+	<br /><img src="img/endpoints2.png" alt="API-34494847 endpoints image"/>
+</p>
 <h2>How to use the API</h2>
 <p>
 	Note: To use the API in API Management service, please refer to after this section<br /><br />
@@ -95,11 +102,6 @@ Note: No snippets of imporant code will be provided because I am concered about 
 		<li>SQL database</li>
     </ul>
 	<img src="img/hosting.png" alt="API-34494847 hosting image"/>
-</p>
-<h2>API Management</h2>
-<p>
-	The student has setup API Management in Azure: <br />
-	<br /><img src="img/apimanagement.png" alt="API-34494847 api management image"/>
 </p>
 <h2>Scrum Implementation</h2>
 <p>
