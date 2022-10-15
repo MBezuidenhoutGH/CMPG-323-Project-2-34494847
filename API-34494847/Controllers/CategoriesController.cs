@@ -156,7 +156,6 @@ namespace _34494847_API.Controllers
                             .Where(x => x.FirstEntity.CategoryId == ID) //BASED ON THE CATEGORY ID BEING PARSED
                             .ToListAsync();
 
-
             return results;
         }
 
